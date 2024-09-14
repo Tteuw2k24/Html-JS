@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ex 03</title>
+    <script>
+        
+    
+        function calcular(){
+            n1 = parseFloat(document.getElementById('n1').value)
+            n2 = parseFloat(document.getElementById('n2').value)
+            n3 = parseFloat(document.getElementById('n3').value)
+            n4 = parseFloat(document.getElementById('n4').value)
+
+            var media = (n1 + n2 + n3 + n4) / 4;
+            document.getElementById('media').value = media;
+            return media;
+        }
+
+        function resultado() {
+            var media = calcular();
+
+            
+            var avaliacao;
+            if (media >= 9) {
+                avaliacao = "Ótimo";
+            } else if (media >= 7) {
+                avaliacao = "Bom";
+            } else if (media >= 4) {
+                avaliacao = "Regular";
+            } else 
+                avaliacao = "Insatisfatório";
+            document.getElementById('ava').value = avaliacao;
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    <p>
+        <label>Digite Suas Notas </label>
+    </p>
+    <p>
+        <label>Nota 1</label>
+        <input type="number" id="n1"/>
+    </p>
+
+    <p>
+        <label>Nota 2</label>
+        <input type="number" id="n2"/>
+    </p>
+
+    <p>
+        <label>Nota 3</label>
+        <input type="number" id="n3"/>
+    </p>
+
+    <p>
+        <label>Nota 4</label>
+        <input type="number" id="n4"/>
+    </p>
+    <p>
+        <input type="button" value="Calcular" onclick="resultado()"/>
+    </p>
+
+<p>
+    <label>Média</label>
+    <input type="number" id="media" disabled/>
+</p>
+
+<p>
+    <label>Avaliação</label>
+    <input type="text" id="ava" disabled/>
+
+
+</p>
+
+
+
+
+
+</body>
+</html>

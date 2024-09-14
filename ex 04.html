@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ex04</title>
+    <script>type='text/javascript'
+
+        function presenca(){
+            
+            var numero = document.getElementById('valor').value
+
+            if (numero >= 80){
+            numero = alert('voce pode participar da competição');
+            }
+            else{
+               alert('Sua frequencia deve ser maior que 80%');
+            }
+            }
+
+        </script>
+</head>
+<body>
+    <P>
+        <label>Digite sua frequencia</label>
+        <input type="" id="valor"/>
+    </P>
+    <p>
+        <input type="button" value="verificar" onclick="presenca()"/>
+    </p>
+</body>
+</html>
